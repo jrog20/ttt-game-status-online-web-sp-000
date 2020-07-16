@@ -67,7 +67,7 @@ def over?(board)
   board == won?(board) || board == draw?(board) || board == full?(board)
 end
 
-# #winner methods
+# #winner method
 
 def winner(board)
   # Return the token "X" or "O" that has won the game given a winning board
