@@ -50,7 +50,7 @@ end
 def over?(board)
   # Returns TRUE if the board has been won, is a draw, or is full
   # Compose using the methods I created
-  board == won?(board) || board == draw?(board) || board == full?(board)
+  won?(board) || draw?(board) || full?(board)
 end
 
 # #winner method
