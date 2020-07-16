@@ -43,9 +43,8 @@ def draw?(board)
   board != won?(board) && board == full?(board)
   # Returns FALSE if the board is NOT WON and the board is NOT FULL
   !(board != won?(board) && board != full?(board))
-   # false
   # Returns FALSE if the board is WON
-  #elsif board == won?(board)
+  board == won?(board)
    # false
   #end
 end
