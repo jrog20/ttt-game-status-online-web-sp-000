@@ -27,7 +27,7 @@ def won?(board)
     win_combination.all? do |index|
       if board[index] == win_combination
         true
-      elsif board[index] == "O"
+      elsif board[index] == win_combination
         true
       else
         false
