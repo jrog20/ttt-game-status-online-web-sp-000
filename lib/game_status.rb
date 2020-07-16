@@ -43,9 +43,7 @@ def draw?(board)
   # Returns FALSE if the board is NOT WON and the board is NOT FULL
   # Returns FALSE if the board is WON
   !(won?(board)) && full?(board) 
-end  
-  #|| !(board != won?(board) && board != full?(board)) || !(board == won?(board))
-
+end
 
 # #over? method
 
