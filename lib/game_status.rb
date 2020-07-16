@@ -59,4 +59,6 @@ def winner(board)
   # Return the token "X" or "O" that has won the game given a winning board
   if won?(board)
     board[win_combination[0]]
+  else
+  end  
 end
