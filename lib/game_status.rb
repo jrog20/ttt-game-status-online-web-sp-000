@@ -23,7 +23,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   # Returns false/nil if no win combination present and return the winning combination indexes as an array if there is a win
   # iterate over WIN_COMBINATIONS (a nested array) and check if board has the same player token in each index of a winning combination
-  WIN_COMBINATIONS.find do |win_combination|
+  WIN_COMBINATIONS.find do board[win_combination]
     win_combination.all? do |index|
       if board[index] == win_combination[index]
         true
