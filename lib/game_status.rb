@@ -41,9 +41,8 @@ end
 def draw?(board)
   # Returns TRUE if the board is NOT WON, but it is FULL (a draw)
   board != won?(board) && board == full?(board)
-  binding.pry
   # Returns FALSE if the board is NOT WON and the board is NOT FULL
-  #board != won?(board) && board != full?(board)
+  !(board != won?(board) && board != full?(board))
    # false
   # Returns FALSE if the board is WON
   #elsif board == won?(board)
