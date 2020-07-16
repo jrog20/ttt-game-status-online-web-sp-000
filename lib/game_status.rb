@@ -60,7 +60,6 @@ def winner(board)
   if won?(board)
     winning_token = won?(board)
     winning_token[0].String
-    #board[WIN_COMBINATIONS[0, 1, 2]]
   else
   end  
 end
