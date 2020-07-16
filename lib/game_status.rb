@@ -1,4 +1,6 @@
 require 'pry'
+#binding.pry
+
 
 # Helper Method
 def position_taken?(board, index)
@@ -23,8 +25,6 @@ def won?(board)
   # Returns false/nil if no win combination present and return the winning combination indexes as an array if there is a win
   # iterate over WIN_COMBINATIONS (a nested array) and check if board has the same player token in each index of a winning combination
   WIN_COMBINATIONS.find do |win_combination|
-    #binding.pry
-
     board[win_combination[0]] == board[win_combination[1]] && board[win_combination[1]] == board[win_combination[2]] && position_taken?(board, win_combination[0])
   end
 end
