@@ -47,7 +47,7 @@ def draw?(board)
   # Returns FALSE if the board is WON
   #elsif board == won?(board)
    # false
-  end
+  #end
 end
 
 # #over? method
