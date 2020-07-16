@@ -59,7 +59,7 @@ def winner(board)
   # Return the token "X" or "O" that has won the game given a winning board
   if won?(board)
     winning_token = won?(board)
-    winning_token[0]
+    winning_token[0].to_i
   else
   end  
 end
